@@ -36,8 +36,13 @@ MODIFY COLUMN usd_pledged TEXT;
 ALTER TABLE ks_projects
 MODIFY COLUMN country VARCHAR(200);
 
+ALTER TABLE ks_projects
+MODIFY COLUMN currency CHAR(5);
+
 SELECT COUNT(*) FROM ks_projects;
 
 SELECT DATABASE();
 
 SHOW TABLES;
+
+SELECT * FROM ks_projects;
